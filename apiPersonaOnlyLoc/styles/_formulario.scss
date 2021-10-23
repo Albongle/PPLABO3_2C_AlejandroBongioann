@@ -1,0 +1,98 @@
+@import 'funciones';
+.main__formulario {
+  position: fixed;
+  top: 20%;
+  padding: 2rem;
+  background-color: whitesmoke;
+  border-radius: 1rem;
+  .formulario__boton {
+    position: absolute;
+    top: 0%;
+    left: 90%;
+    padding: 0.5rem 1rem;
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    border: 0;
+    color: $color;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px $color;
+    &:active {
+      @include animacionBoton();
+      background-color: tomato;
+      color: whitesmoke;
+    }
+  }
+  fieldset {
+    margin: 1rem;
+    border: 1px solid green;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+  }
+  .formulario__controles {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    .controles__texto {
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      margin: 1rem;
+    }
+    .controles__radio {
+      display: flex;
+      flex-direction: row;
+      margin: 1rem;
+      .radio__input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        & label {
+          margin: 1rem;
+        }
+      }
+    }
+    .controles__boton {
+      margin-top: 1rem;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      border: 0;
+      cursor: pointer;
+      &:active {
+        @include animacionBoton();
+      }
+    }
+  }
+}
+
+.incompleto {
+  border: red solid 1px;
+}
+.completo {
+  border: green solid 1px;
+}
+
+.controles__boton-green {
+  background-color: yellowgreen;
+  color: whitesmoke;
+}
+.controles__boton-orange {
+  background-color: orange;
+  color: whitesmoke;
+}
+.controles__boton-orangered {
+  background-color: orangered;
+  color: whitesmoke;
+}
+.controles__boton-red {
+  background-color: red;
+  color: whitesmoke;
+}
+
+@keyframes agrandar {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+  }
+}

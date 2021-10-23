@@ -1,0 +1,22 @@
+@import 'funciones';
+.main{
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__boton{
+        cursor: pointer;
+        padding: 1rem 3rem;
+        border-radius: 1rem;
+        background-color: white;
+        color: $color-opaco;
+        border-style:groove;
+        box-shadow: papayawhip 1rem .2rem 2rem;
+        &:active{
+            @include animacionBoton();
+            background-color: $color-opaco;
+            color: white;
+        }
+}

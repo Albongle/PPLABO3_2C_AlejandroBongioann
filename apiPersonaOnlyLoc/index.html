@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/main.js" defer type="module"></script>
+    <title>Practica Parcial</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="./img/logo.png" alt="logo">
+        <nav class="header__nav">
+            <ul class="nav__listas">
+                <li class="listas__link"><a href="#">Inicio</a></li>
+                <li class="listas__link"><a href="#">Nosotros</a></li>
+                <li class="listas__link"><a href="#">Contacto</a></li>
+                <li class="listas__link"><a href="#">Econtranos</a>
+                    <ul class="listas__sublistas">
+                        <li class="sublistas__sublink"><a href="#">Donde</a></li>
+                        <li class="sublistas__sublink"><a href="#">Cuando</a></li>
+                        <li class="sublistas__sublink"><a href="#">Como</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <div id="spinner" class="main__spinner">
+
+        </div>
+
+        <!-- <input class="main__boton" type="button" id="btnAbrirFrm" value="Open"> -->
+        <form hidden id="formulario" class="main__formulario">
+            <fieldset>
+                <legend>Formulario</legend>
+                <input class="formulario__boton" type="button" id="btnCierreFrm" value="X">
+
+                <div class="formulario__controles">
+                    <input class="controles__texto incompleto" type="hidden" id="id">
+                    <input class="controles__texto incompleto" type="text" id="nombre" placeholder="Nombre" required>
+                    <input class="controles__texto incompleto" type="text" id="apellido" placeholder="Apellido"
+                        required>
+                    <select class="controles__texto incompleto" name="localidades" id="localidades">
+
+                            
+
+                    </select>
+                    <div class="controles__radio">
+                        <div class="radio__input"><label for="masculino">Masculino</label><input type="radio" name="sexo" value="Male" id="masculino"></div>
+                        <div class="radio__input"><label for="femenino">Femenino</label><input type="radio" name="sexo" value="Female" id="femenino"></div>
+                    </div>
+     
+                    <input class="controles__boton controles__boton-orange" type="button" value="Modificar" id="btnModificar">
+
+                </div>
+            </fieldset>
+        </form>
+
+        <div class="main__tabla" id="contenedor-tabla">
+
+
+
+        </div>
+
+
+
+
+
+    </main>
+
+
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="nav__listas">
+                <li class="listas__link"><a href="#">Inicio</a></li>
+                <li class="listas__link"><a href="#">Nosotros</a></li>
+                <li class="listas__link"><a href="#">Contacto</a></li>
+                <li class="listas__link"><a href="#">Econtranos</a>
+            </ul>
+        </nav>
+
+        <p>Todos los derechos reservedos &copy; 2021</p>
+    </footer>
+
+</body>
+
+</html>

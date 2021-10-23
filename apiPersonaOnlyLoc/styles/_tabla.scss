@@ -1,0 +1,44 @@
+.main__tabla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    table {
+      border-collapse: collapse;
+      thead {
+        border: .1rem solid whitesmoke;
+        background-color:white;
+        
+        
+        th {
+            padding: 1rem;
+            color: $color-opaco;
+        }
+      }
+      tbody {
+        tr {
+         
+            &:nth-of-type(even){
+                background-color: $color;
+                color: whitesmoke;
+            }
+          td {
+            border: .1rem solid whitesmoke;
+
+            text-align: center;
+            padding: .5rem;
+          }
+        }
+      }
+    }
+
+    & img {
+        width: 1.6rem;
+        cursor: pointer;
+        &:active{
+          transform: scale(0.9,0.9);
+        }
+    }
+
+}

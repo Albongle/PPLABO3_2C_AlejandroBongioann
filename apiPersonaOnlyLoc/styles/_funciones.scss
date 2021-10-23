@@ -1,0 +1,58 @@
+@mixin animacionBoton() {
+    transform: scale(0.9, 0.9);
+    transition: ease-in;
+    transition-duration: 0.1s;
+    transition-delay: 0.1ms;
+}
+
+// $colores-map: (
+//   principal: $color-primario,
+//   secundario: $color-secundario,
+//   principal-transparente: rgba(95, 158, 160, 0.5),
+//   secundario-transparente: rgba(245, 255, 250, 0.5)
+// );
+
+
+// @function AsignarColor($color) {
+
+//     @each $indice, $valor in $colores-map {
+//       @if ($indice == $color) {
+//         @return $valor;
+//       }
+//     }
+//   }
+  
+
+// @mixin CrearBoton($tipo) {
+//     padding: 1rem;
+//     width: 30%;
+//     border-radius: 1rem;
+//     color: aliceblue;
+//     @if ($tipo == "aceptar") {
+//       background-color: darkseagreen;
+//     } @else if($tipo == "cancelar") {
+//       background-color: orangered;
+//     }
+//   }
+  
+//   @function AsignarColor($color) {
+  
+//     @each $indice, $valor in $colores-map {
+//       @if ($indice == $color) {
+//         @return $valor;
+//       }
+//     }
+//   }
+  
+//   @mixin ClaseDinamica($nombreClase, $cantidad, $atributo, $valorInicial)
+//   {
+//       @for $i from 1 through $cantidad {
+//           .#{$nombreClase}-#{$i}{
+  
+//               #{$atributo}:$valorInicial+$i+rem;
+//           }
+          
+//       }
+//   }
+  
+  
